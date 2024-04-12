@@ -1,0 +1,239 @@
+.chat{
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+}
+.chatlogo{
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  padding: 1rem;
+  padding-top:1.2rem ;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4rem;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color1);
+  right: -100%;
+  color: var(--color3);
+  border-radius: 40rem;
+  z-index: 10;
+  bottom: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px var(--color7);
+  opacity: 0;
+}
+.chatlogo:hover{
+  color: var(--color4);
+  background-color: var(--color3);
+}
+.container{
+  width: 450px;
+  position: fixed;
+  z-index: 11;
+  top: 83px;
+  right:-100%;
+  height: calc(100% - 90px);
+  border: 2px solid var(--color5);
+  background-color: var(--color8);
+  border-radius: 2rem;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s linear ;
+}
+.view{
+  right: 1rem;
+  opacity: 1;
+}
+.contact{
+  width: 100%;
+  height: 100%;
+}
+header{
+  width: 100%;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  padding: .5rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-bottom: 0;
+}
+.title h2{
+ font-size: 2rem;
+ color: var(--color2);
+ margin-top: .8rem;
+ font-family: var(--sub-title);
+}
+.title img{
+  width: 4rem;
+}
+.cancel{
+  margin: 1.5rem;
+  margin-top: 1.7rem;
+  margin-bottom: 0;
+
+}
+.cancel mat-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--color4);
+}
+
+.charoom{
+  position: absolute;
+  width: 100%;
+  height: 472px;
+  background-color:aliceblue;
+}
+.chats{
+  width: 100%;
+  height: 420px;
+  background-color: aliceblue;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: block;
+}
+.chats::-webkit-scrollbar{
+  width: 5px;
+}
+.chats::-webkit-scrollbar-track{
+  background-color: var(--color4);
+}
+.chats::-webkit-scrollbar-thumb{
+  background: linear-gradient(var(--color2),var(--color3));
+  border-radius: 10px;
+}
+
+.sendmessage{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sub{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.sub input{
+width: calc(100%);
+font-size: 1.2rem;
+padding: .3rem;
+height: 2.6rem;
+border-radius: 5px;
+border-color: var(--color4);
+outline: none;
+}
+.sub input:focus,
+.sub input:focus-visible
+{
+  border-color: var(--color4);
+}
+.send_button mat-icon{
+margin: .6rem;
+color: var(--color1);
+}
+.send_button mat-icon:hover{
+  color: var(--color2);
+}
+.send_button{
+  border-radius: 5px;
+}
+.single-chat{
+  width: 100%;
+  display: block;
+}
+.senddiv{
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.recivediv{
+  width: 100%;
+  align-self: flex-start;
+  justify-content: flex-start;
+
+}
+.recivediv div,
+.senddiv div{
+  width: 80%;
+  display: flex;
+}
+.send{
+  position: sticky;
+  margin: .5rem;
+  padding: .4rem;
+  border-radius: .5rem;
+  background-color: var(--color9);
+  width: auto;
+  max-width: 80%;
+
+}
+.send:before{
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent; /* Adjust size as needed */
+  border-right: 5px solid transparent; /* Adjust size as needed */
+  border-bottom: 10px solid #a9acaf;
+  position: absolute;
+  transform: rotate(-270deg);
+  right: -7px;
+  top: 10px;
+}
+.img{
+  width: 2rem;
+  height: 2rem;
+  margin-top: 10px;
+  border-radius: 2rem;
+}
+
+.recive{
+  position: sticky;
+  margin: .5rem;
+  padding: .4rem;
+  left: 0;
+  border-radius: .5rem;
+  width: auto;
+  max-width: 80%;
+  background-color: var(--color3);
+}
+.recive:before{
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent; /* Adjust size as needed */
+  border-right: 5px solid transparent; /* Adjust size as needed */
+  border-bottom: 10px solid var(--color3);
+  position: absolute;
+  transform: rotate(270deg);
+  left: -7px;
+  top: 10px;
+}
+@media (max-width:485px) {
+
+  .container{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    transition: all .3s linear;
+    border: none;
+  }
+  .sub{
+    width: 100%;
+  }
+  .view{
+    right: 0;
+    opacity: 1;
+  }
+}

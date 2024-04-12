@@ -1,0 +1,49 @@
+<div class="chatlogo" (click)="visiblechat()">
+  <mat-icon class="chat">chat</mat-icon>
+</div>
+
+
+<div class="container" [ngClass]="view?'view':''" >
+  <div class="content">
+    <header>
+      <div class="title">
+        <img src="../../../../assets/images/logo.png" alt="">
+        <h2>Joe Bot</h2>
+      </div>
+      <div class="cancel">
+        <mat-icon (click)="visiblechat()">cancel</mat-icon>
+      </div>
+    </header>
+    <div class="charoom">
+      <div class="chats" id="container">
+       <div class="single-chat" *ngFor="let x of chats">
+       <div class="senddiv">
+        <div>
+        <div class="send">
+          {{x.send}}
+        </div>
+        <img [src]="profile" class="sendlogo img">
+        </div>
+       </div>
+       <div class="recivediv">
+        <div>
+          <img src="../../../../assets/images/logo.png" class="recivelogo img">
+          <div class="recive" >
+            {{x.responce}}
+          </div>
+        </div>
+       </div>
+       </div>
+
+      </div>
+      <div class="sendmessage">
+          <div class="sub">
+            <input type="text" placeholder="send message" [(ngModel)]="sendTerm" (keyup.enter)="send()">
+            <div class="send_button">
+          <mat-icon (click)="send()">send</mat-icon>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

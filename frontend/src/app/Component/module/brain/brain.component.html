@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="content">
+    <table>
+      <tr>
+        <td colspan="2" class="x"><app-title title="Report" position="left" color="white"></app-title></td>
+      </tr>
+      <tr>
+        <td>Report Id</td>
+        <td>{{report.id}}</td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>{{report.name}}</td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>{{report.age}}</td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td>{{report.dob}}</td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>{{report.gender}}</td>
+      </tr>
+      <tr>
+        <td>Tumor Type</td>
+        <td [ngStyle]="{'color':tc}">{{report.tumor_imfo.classify}}</td>
+      </tr>
+      <tr>
+        <td>Given image</td>
+        <td><img src="data:image/jpeg;base64,{{report.given_img}}" width="200px"></td>
+      </tr>
+      <tr>
+        <td>Predicted Image</td>
+        <td><img src="data:image/jpeg;base64,{{report.predicted_img}}" width="200px"></td>
+      </tr>
+      <tr>
+        <td>Tumor Size</td>
+        <td>{{report.tumor_imfo.size}}cm</td>
+      </tr>
+      <tr>
+        <td>Confidence level prediction</td>
+        <td>{{report.tumor_imfo.confidence_level}}%</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="y">
+          <button (click)="open()">Download</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

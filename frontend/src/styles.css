@@ -1,0 +1,52 @@
+@font-face {
+  font-family: title;
+  src: url(assets/font/White_Storm.otf);
+}
+@font-face {
+  font-family: text1;
+  src: url(assets/font/Classica-BoldOblique.ttf);
+}
+@font-face {
+  font-family: sub-title;
+  src: url(assets/font/Bohemian_Soul.otf);
+}
+@font-face {
+  font-family: text2;
+  src: url(assets/font/Happiness_Mood_Demo.ttf);
+}
+
+:root{
+  --color1:#17252a;
+  --color2:#2b7a78;
+  --color3:#3aafa9;
+  --color4:#def2f1;
+  --color5:#feffff;
+  --color6:#000000;
+  --color7:#808080;
+  --color8:#eee;
+  --color9:#7f7f7f9f;
+  --heading:2.7rem;
+  --sub-heading:1.5rem;
+  --text:1rem;
+  --title:title;
+  --sub-title:sub-title;
+  --text1:text1;
+  --text2:text2;
+  --text3:'Times New Roman', Times, serif
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--text3);
+}
+html, body { height: 100%; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body::-webkit-scrollbar{
+  width: 0;
+}

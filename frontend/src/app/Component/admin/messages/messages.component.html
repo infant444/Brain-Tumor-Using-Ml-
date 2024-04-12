@@ -1,0 +1,29 @@
+<div class="contanier">
+  <a routerLink="/admin/user" class="moveto">Move to User</a>
+  <div class="content">
+   <table class="list">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Send Message</th>
+      <th>responce</th>
+      <th>delete</th>
+    </tr>
+    <tr *ngFor="let x of message">
+      <td>{{x.name}}</td>
+      <td>{{x.email}}</td>
+      <td class="x">
+        <p>
+          {{x.message}}
+        </p></td>
+      <td><p *ngIf="x.response">
+        {{x.response}}
+      </p>
+        <textarea [(ngModel)]="responce" cols="30" rows="10" *ngIf="!x.response" ></textarea></td>
+      <td *ngIf="!x.response"><button (click)="send(x.id)">Send</button></td>
+    </tr>
+   </table>
+
+  </div>
+</div>
+

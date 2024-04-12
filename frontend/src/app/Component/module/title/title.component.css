@@ -1,0 +1,9 @@
+.container{
+  width: 100%;
+}
+h1{
+  font-family: var(--sub-title);
+  font-size: 1.5rem;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}

@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.profile-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-header h2,
+.profile-header p {
+  margin: 0;
+}
+
+.profile-actions {
+  margin-top: 20px;
+}
+
+.profile-actions a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.profile-actions a:hover {
+  background-color: var(--color1);
+  color: #fff;
+}
+.report-list {
+  margin-top: 20px;
+}
+
+table{
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th,tr,td{
+  border: 2px solid black;
+  padding: .5rem;
+
+}
+th{
+  text-align: left;
+}
+ td a {
+  color: #000;
+  text-decoration: none;
+  color: var(--color1);
+}
+
+td a:hover {
+  text-decoration: underline;
+}

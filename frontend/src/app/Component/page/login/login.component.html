@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="content">
+    <div class="xyz" ngClass="{{ filp }}">
+      <div class="content_login">
+        <div class="login" ngClass="{{ singin_active }}">
+          <app-title title="Sign up"></app-title>
+          <form class="signup_email" [formGroup]="signup" (ngSubmit)="signup_submit()">
+            <input type="text" formControlName="name" placeholder="Name" class="input_box" [ngClass]="(signup_submitted && signup_control.name.invalid)?'error':'no-error'"/>
+            <input type="email" formControlName="email" placeholder="email" class="input_box" [ngClass]="(signup_submitted && signup_control.email.invalid)?'error':''"/>
+            <input type="password" formControlName="password" placeholder="password" class="input_box" [ngClass]="(signup_submitted && signup_control.password.invalid)?'error':''"/>
+            <input type="submit" value="sign up" class="input_box button_enter" />
+          </form>
+          <div class="google_signup alter">
+            or sign up Google
+            <asl-google-signin-button type="standard" size="medium" shape="pill"
+              text="signup_with"></asl-google-signin-button>
+          </div>
+        </div>
+        <div class="switch_signup swip_bar" ngClass="{{ singin_disable }}">
+          <h1>Hello Friend!</h1>
+          <p>Register with your personal detail to use all of site feature</p>
+          <button (click)="move()">sign up</button>
+        </div>
+        <div class="switch_signup_text flip_bar" ngClass="{{ singup_flip }}">
+          Existing user <span (click)="move()">Sing in</span>
+        </div>
+      </div>
+      <div class="content_signup">
+        <div class="signup" ngClass="{{ signup_disable }}">
+          <app-title title="Sign in"></app-title>
+          <form class="login_email" [formGroup]="login" (ngSubmit)="login_submit()">
+            <input type="email" formControlName="email" placeholder="email" class="input_box" [ngClass]="(login_submitted && Login_Control.email.invalid)?'error':''" />
+            <input type="password" formControlName="password" placeholder="password" class="input_box" [ngClass]="(login_submitted && Login_Control.password.invalid)?'error':''" />
+            <a routerLink="/login/forgotpassword" class="forgotpassword">Forgotted password?</a>
+            <input type="submit" value="sign in" class="input_box button_enter" />
+          </form>
+          <div class="google_login alter">
+            or sign in Google
+            <asl-google-signin-button type="standard" size="medium" shape="pill"
+              text="signup_with"></asl-google-signin-button>
+          </div>
+        </div>
+        <div class="switch_signin swip_bar" ngClass="{{ login_swip }}">
+          <h1>Welcome Back!</h1>
+          <p>Enter your personal details to use all of site feature</p>
+          <button (click)="move()">sign in</button>
+        </div>
+        <div class="switch_signin_text flip_bar" ngClass="{{ singin_flip }}">
+          New user <span (click)="move()">Sing up</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

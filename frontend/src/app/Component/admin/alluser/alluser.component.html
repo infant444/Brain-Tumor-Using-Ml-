@@ -1,0 +1,28 @@
+<div class="contanier">
+  <a routerLink="/admin/message" class="moveto">Move to message</a>
+  <div class="content">
+   <table class="list">
+    <tr>
+      <th>Id</th>
+      <th>Profile</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Login Type</th>
+      <th>Login time</th>
+      <th>delete</th>
+    </tr>
+    <tr *ngFor="let x of users">
+      <td><a routerLink="/user/{{x.id}}">{{x.id}}</a></td>
+      <td>
+        <img [src]="profile" alt=""  *ngIf="!x.profile">
+        <img [src]="x.profile" alt=""  *ngIf="x.profile">
+      </td>
+      <td>{{x.name}}</td>
+      <td>{{x.email}}</td>
+      <td>{{x.type}}</td>
+      <td>{{x.login_date}}</td>
+      <td><button (click)="del(x.id)">Delete</button></td>
+    </tr>
+   </table>
+  </div>
+</div>

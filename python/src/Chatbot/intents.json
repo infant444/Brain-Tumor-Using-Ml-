@@ -1,0 +1,337 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "Hello"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {"tag": "braintumor",
+    "patterns": [
+      "Description about braintumor",
+      "What is braintumor ?",
+      "define braintumor",
+      "brain tumor"
+  ],
+    "responses": [
+    "A brain tumor is an abnormal mass of tissue in the brain. It can be benign or malignant, causing various symptoms such as headaches, seizures, and changes in vision or personality. Treatment options include surgery, radiation therapy, and chemotherapy, depending on the type and location of the tumor.",
+    "A brain tumor is an abnormal growth of cells in the brain. It can be benign or malignant, disrupting normal brain function. Symptoms may include headaches, seizures, cognitive impairment, and changes in behavior. Treatment involves surgery, radiation, chemotherapy, or a combination depending on tumor type, size, and location.",
+    "A brain tumor is an abnormal growth of cells within the brain or the central spinal canal. It can be benign (non-cancerous) or malignant (cancerous). Tumors can arise from different types of brain cells and can disrupt normal brain function by exerting pressure on surrounding tissues or by invading normal brain tissue."
+  ]
+    },
+    {"tag": "symptoms",
+     "patterns": [
+      "What are the early symptoms of brain tumors?",
+      "symptoms",
+      "symptoms of brain tumor"
+    ],
+     "responses": ["Persistent headaches, seizures, and changes in vision or speech.",
+     "Nausea, vomiting, and difficulty with balance or coordination.",
+     "Personality or behavior changes, along with cognitive impairments."
+    ]
+    },
+    {"tag": "common",
+    "patterns": [
+      "How common are brain tumors?",
+      "common"
+    ],
+    "responses": [
+      "Brain tumors vary in frequency, with some types being relatively rare. However, they can occur at any age and affect both genders.",
+      "Common risk factors for brain tumors include exposure to radiation, family history of brain tumors, and certain genetic syndromes.",
+      "Symptoms like persistent headaches, seizures, cognitive changes, and balance problems may indicate the presence of a brain tumor."
+    ]
+    },
+    {"tag": "risk",
+    "patterns": [
+      "What are the risk factors associated with brain tumors",
+      "risk",
+      "what are risk in brain tumor"
+    ],
+    "responses": [
+      "Early symptoms of brain tumors include headaches, seizures, changes in vision, hearing problems, and cognitive changes like memory loss.",
+      "Brain tumors vary in frequency, with some types being quite rare. However, they can occur in people of all ages.",
+      "Risk factors for brain tumors include exposure to radiation, family history of brain tumors, and certain genetic conditions."
+    ]
+    },
+    {"tag": "hereditary",
+    "patterns": [
+      "Can brain tumors be hereditary?",
+      "hereditary",
+      "hereditary of brain tumor"
+    ],
+    "responses": [
+      "Yes, some brain tumors can be hereditary, particularly certain types like glioblastomas and meningiomas. Genetic predisposition plays a role, but environmental factors may also contribute.",
+      "While genetics can increase susceptibility, the majority of brain tumors are sporadic, arising from complex interactions between genetic and environmental factors.",
+      "Inherited conditions such as neurofibromatosis, Li-Fraumeni syndrome, and tuberous sclerosis can raise the risk of developing brain tumors."
+    ]
+    },
+    {"tag": "types",
+    "patterns": [
+      "Are there different types of brain tumors?",
+      "types of brain tumor",
+      "kinds of brain tumor",
+      "difference of brain tumor",
+      "types"
+    ],
+    "responses": [
+      "Yes, brain tumors can be hereditary, especially in cases of certain genetic syndromes like neurofibromatosis or Li-Fraumeni syndrome.",
+      "There are various types of brain tumors, including gliomas, meningiomas, pituitary tumors, and medulloblastomas, each with distinct characteristics and treatment approaches.",
+      "Early symptoms of brain tumors may include headaches, seizures, changes in vision or hearing, cognitive changes, balance problems, and personality or mood changes."
+    ]
+    },
+    {"tag": "diagnosed",
+    "patterns": [
+      "How is a brain tumor diagnosed?",
+      "diagnosed"
+    ],
+    "responses": [
+      "Brain tumors are typically diagnosed through imaging tests like MRI or CT scans, which provide detailed images of the brain's structure. Biopsy may also be necessary to determine the tumor type.",
+      "Symptoms such as headaches, seizures, cognitive changes, and balance issues may prompt further investigation for brain tumors.",
+      "Early diagnosis is crucial for effective treatment and improved outcomes in brain tumor cases."
+    ]
+    },
+    {"tag": "treatment",
+    "patterns": [
+      "What are the treatment options for brain tumors?",
+      "treatment",
+      "what are the brain tumor treatment"
+    ],
+    "responses": [
+      "Treatment options for brain tumors include surgery, radiation therapy, and chemotherapy. The choice depends on the type, location, and stage of the tumor. In some cases, a combination of treatments may be recommended for the best outcome.",
+      "Clinical trials are also exploring innovative approaches such as immunotherapy and targeted drug therapies, offering promising alternatives for brain tumor treatment. These trials aim to improve outcomes and quality of life for patients while advancing medical knowledge.",
+      "Additionally, palliative care and supportive therapies can help manage symptoms and enhance the patient's quality of life, focusing on pain relief, emotional support, and improving overall well-being. It's essential for patients to discuss all available options with their healthcare team to tailor a treatment plan that best suits their needs."
+    ]
+    },
+    {"tag": "complications",
+    "patterns": [
+      "What are the potential complications of brain tumor surgery?",
+      "complications"
+    ],
+    "responses": [
+      "Complications of brain tumor surgery may include infection, bleeding, or damage to surrounding brain tissue. Post-surgery, patients may experience cognitive changes, seizures, or motor deficits, requiring rehabilitation and ongoing monitoring.",
+      "In some cases, surgical removal of a brain tumor can lead to complications such as speech or language difficulties, changes in personality, or impaired movement. Rehabilitation therapy may be necessary to address these challenges.",
+      "Brain tumor surgery carries the risk of neurological deficits such as weakness, sensory changes, or coordination problems. Rehabilitation programs tailored to each patient's needs can help optimize recovery and restore function to the greatest extent possible."
+    ]
+    },
+    {"tag": "radiation",
+    "patterns": [
+      "How does radiation therapy work in treating brain tumors?",
+      "radiation",
+      "process of radiation therapy"
+    ],
+    "responses": [
+      "Radiation therapy for brain tumors uses high-energy beams to target and destroy cancer cells while minimizing damage to healthy tissue.",
+      "Chemotherapy may be used to treat brain tumors, either alone or in combination with other treatments, to kill cancer cells or stop them from growing.",
+      "Immunotherapy, a newer approach, harnesses the body's immune system to fight cancer cells and is being studied for its potential in treating brain tumors."
+    ]
+    },
+    {"tag": "alternative therapies",
+    "patterns": [
+      "Are there any alternative therapies for brain tumors?",
+      "alternative therapies",
+      "any other alternative therapies"
+    ],
+    "responses": [
+      "While conventional treatments like surgery, radiation, and chemotherapy are primary options, some patients explore complementary therapies such as acupuncture or dietary supplements. However, it's essential to consult healthcare professionals for guidance, as evidence supporting these approaches varies.",
+      "Alternative therapies like acupuncture, meditation, or dietary changes may offer symptom relief and support overall well-being. However, they shouldn't replace conventional medical treatments. It's crucial for patients to discuss these options with their healthcare team to ensure safety and effectiveness in conjunction with standard therapies.",
+      "Complementary therapies like acupuncture, yoga, or nutritional supplementation can sometimes complement conventional treatments, providing symptom relief and enhancing overall well-being. However, it's essential for patients to consult with their healthcare team to ensure these approaches are safe and effective alongside standard medical care."
+    ]
+    },
+    {"tag": "lifestyle",
+    "patterns": [
+      "What lifestyle changes can help manage symptoms of brain tumors?",
+      "lifestyle",
+      "life style of tumor"
+    ],
+    "responses": [
+      "Adopting a balanced diet rich in fruits, vegetables, and whole grains can support overall health. Limiting processed foods and alcohol may also be beneficial. Consult a healthcare professional for personalized dietary recommendations.",
+      "Regular physical activity can improve mood, reduce stress, and enhance overall well-being for brain tumor patients. Always consult with a healthcare provider before starting any exercise regimen to ensure safety.",
+      "Practicing relaxation techniques such as deep breathing, meditation, or yoga can help alleviate stress and promote emotional well-being. Support groups and counseling can also provide valuable coping strategies for patients and families."
+    ]
+    },
+    {"tag": "resources",
+    "patterns": [
+      "What support resources are available for patients and families dealing with brain tumors?",
+      "resources",
+      "resources of brain tumor"
+    ],
+    "responses": [
+      "Brain Tumor Support Groups: Connect with others facing similar challenges, share experiences, and gain emotional support.",
+      "Online Forums: Participate in virtual communities where individuals affected by brain tumors exchange information and provide encouragement.",
+      "Counseling Services: Seek professional guidance to cope with emotional distress and navigate the complexities of living with a brain tumor."
+    ]
+    },
+    {"tag": "survival",
+    "patterns": [
+      "What are the survival rates for different stages of brain tumors?",
+      "survival rate"
+    ],
+    "responses": [
+      "Survival rates vary depending on factors like tumor type, location, and individual health. For example, the five-year survival rate for glioblastoma, a common aggressive brain tumor, is around 5% to 10%. However, for some slow-growing tumors, survival rates can be higher.",
+      "Recent advancements in treatment, such as targeted therapies and immunotherapy, show promise in improving survival rates and quality of life for brain tumor patients. Clinical trials exploring these innovations offer hope for better outcomes.",
+      "It's crucial to remember that survival rates are statistical averages and don't predict individual outcomes. Each person's journey with a brain tumor is unique, and factors like treatment response, overall health, and support systems play significant roles in prognosis."
+    ]
+    },
+    {"tag": "advancement",
+    "patterns": [
+      "What are the latest advancements in brain tumor research?",
+      "advancement of tumor",
+      "advancement",
+      "latest advancement"
+    ],
+    "responses": [
+      "Recent research focuses on targeted therapies, aiming to block specific molecular pathways in brain tumors.",
+      "Immunotherapy, utilizing the body's immune system to fight cancer cells, shows promising results in some brain tumor cases.",
+      "Novel imaging techniques like functional MRI are enhancing early detection and monitoring of brain tumor progression."
+    ]
+    },
+    {"tag": "clinical trials",
+    "patterns": [
+      "Are there any clinical trials available for brain tumor treatment?",
+      "clinical trials",
+      "clinicaltrials"
+    ],
+    "responses": [
+      "Yes, clinical trials explore new treatments or combinations to improve outcomes for brain tumor patients.",
+      "Participating in a clinical trial can provide access to cutting-edge therapies not yet widely available.",
+      "However, it's essential to discuss potential risks and benefits with your healthcare provider before considering participation."
+    ]
+    },
+    {"tag": "neurological deficts",
+    "patterns": [
+      "Can brain tumors cause neurological deficits?",
+      "neurological deficts"
+    ],
+    "responses": [
+      "Yes, brain tumors can cause various neurological deficits depending on their location and size. These deficits may include weakness, numbness, speech difficulties, vision changes, and cognitive impairments.",
+      "Some brain tumors may lead to seizures, changes in personality, memory problems, or difficulties with coordination and balance.",
+      "Early detection and prompt treatment are crucial to minimize the risk of permanent neurological deficits."
+    ]
+    },
+    {"tag": "imaging techniques",
+    "patterns": [
+      "What imaging techniques are used to detect brain tumors?",
+      "imaging techniques"
+    ],
+    "responses": [
+      "Common imaging techniques for brain tumor detection include MRI (Magnetic Resonance Imaging), CT (Computed Tomography), and PET (Positron Emission Tomography) scans.",
+      "Advanced MRI sequences like diffusion-weighted imaging and perfusion MRI are particularly effective in evaluating brain tumor characteristics.",
+      "Some specialized centers also offer functional MRI (fMRI) to map brain functions before surgery."
+    ]
+    },
+    {"tag": "dietary",
+    "patterns": [
+      "Are there any dietary recommendations for brain tumor patients?",
+      "dietary"
+    ],
+    "responses": [
+      "A balanced diet rich in fruits, vegetables, and whole grains is recommended for brain tumor patients. Avoiding processed foods and excess sugar may also support overall health during treatment.",
+      "Hydration is crucial. Ensure adequate fluid intake, preferably water, to prevent dehydration, which can exacerbate symptoms and impact treatment outcomes.",
+      "Consult with a registered dietitian for personalized dietary recommendations tailored to your specific needs and treatment plan."
+    ]
+    },
+    {"tag": "follow-up",
+    "patterns": [
+      "What should I expect during follow-up appointments after brain tumor treatment?",
+      "follow-up"
+    ],
+    "responses": [
+      "During follow-up appointments, expect regular imaging scans to monitor tumor status. Neurological exams may assess any new symptoms or changes. Discussions on treatment outcomes and potential long-term effects are also common.",
+      "Follow-up appointments typically involve discussions on ongoing symptoms, if any, and adjustments to treatment plans if necessary. Imaging scans may be conducted to monitor tumor progression or recurrence.",
+      "Expect regular follow-up appointments to assess your overall health and any potential signs of tumor recurrence. Your healthcare team will provide guidance on managing symptoms and adjusting treatment plans as needed."
+    ]
+    },
+    {"tag": "reduce",
+    "patterns": [
+      "How can I reduce my risk of developing a brain tumor?",
+      "What lifestyle choices or environmental factors may increase the risk of developing a brain tumor?"
+    ],
+    "responses": [
+      "Early symptoms include headaches, seizures, cognitive changes. Seek medical attention if experiencing persistent symptoms.",
+      "Brain tumors are relatively rare, accounting for about 1.4% of all cancers.",
+      "Risk factors include age, family history, radiation exposure, and certain genetic conditions."
+    ]
+    },
+    {
+      "tag":"glioma",
+      "patterns":[
+        "glioma",
+        "about glioma tumor",
+        "define glioma"
+      ],
+      "responses":[
+        "Glioma is a type of tumor that originates in the brain or spine, often affecting glial cells, which support and protect nerve cells. These tumors can vary in severity and aggressiveness. Symptoms depend on the tumor's location and may include headaches, seizures, and neurological deficits. Treatment typically involves surgery, radiation, and chemotherapy",
+        "Glioma is a type of brain tumor that originates from glial cells, which support nerve cells in the brain. It can vary in severity from benign to malignant. Symptoms may include headaches, seizures, and cognitive impairment. Treatment often involves surgery, radiation, and chemotherapy, depending on the tumor's type and grade.",
+        "Glioma is a type of brain tumor that originates from glial cells. These tumors can vary in severity from low-grade to high-grade malignancies. Symptoms depend on the tumor's location and size and may include headaches, seizures, and neurological deficits. Treatment often involves surgery, radiation therapy, and chemotherapy."
+      ]
+    },
+    {
+      "tag":"meningioma",
+      "patterns":[
+        "meningioma",
+        "about meningioma tumor",
+        "define meningioma"
+      ],
+      "responses":[
+        "Meningioma is a common type of brain tumor that arises from the meninges, the protective layers surrounding the brain and spinal cord. Typically slow-growing and usually benign, it may cause symptoms such as headaches, seizures, or neurological deficits depending on its location and size. Treatment may involve surgery, radiation, or observation.",
+        "Meningioma is a typically benign tumor arising from the meninges, the protective layers surrounding the brain and spinal cord. It often presents with symptoms like headaches, seizures, and neurological deficits. Treatment involves surgery, radiation, or observation depending on size, location, and symptoms. Prognosis is generally favorable with appropriate management.",
+        "Meningioma is a common type of benign brain tumor that originates in the meninges, the protective layers surrounding the brain and spinal cord. While usually slow-growing and non-cancerous, meningiomas can cause symptoms such as headaches, seizures, and neurological deficits, often necessitating surgical intervention for removal and management."
+      ]
+    },
+    {
+      "tag":"pituitary",
+      "patterns":[
+        "pituitary",
+        "about pituitary tumor",
+        "define pituitary"
+      ],
+      "responses":[
+        "A pituitary tumor is an abnormal growth in the pituitary gland, a small gland at the base of the brain that regulates hormone production. Depending on its size and location, it can cause hormonal imbalances, vision problems, headaches, and other symptoms. Treatment may involve medication, surgery, or radiation therapy.",
+        "A pituitary tumor is an abnormal growth in the pituitary gland, a pea-sized organ located at the base of the brain. It can cause hormonal imbalances, leading to symptoms like headaches, vision problems, fatigue, and hormonal dysfunction. Treatment options include medication, surgery, and radiation therapy, depending on the tumor type and size.",
+        "A pituitary tumor is an abnormal growth in the pituitary gland, a small gland at the base of the brain. These tumors can cause hormonal imbalances leading to symptoms like headaches, vision problems, and hormone overproduction or deficiency. Treatment may involve medication, surgery, or radiation therapy depending on the tumor's size and type."
+      ]
+    },
+    {"tag": "noanswer",
+     "patterns": [""],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "I am still here dude"]
+    }
+  ]
+}

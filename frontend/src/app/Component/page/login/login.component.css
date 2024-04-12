@@ -1,0 +1,263 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.content {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+.xyz {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.content_login,
+.content_signup {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  padding: 0.5rem;
+}
+.content_login {
+  left: 0;
+}
+.content_signup {
+  right: 0;
+}
+.swip_bar {
+  /* display: none; */
+  top: -1rem;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 105%;
+  background-color: var(--color2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: var(--color5);
+}
+.swip_bar button {
+  background-color: transparent;
+  border: 2px solid var(--color5);
+  padding: 0.3rem 0.7rem;
+  margin: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color5);
+  border-radius: 7px;
+}
+app-title {
+  margin: 0.5em;
+}
+.login {
+  position: relative;
+  z-index: 2;
+}
+.login_email,
+.signup_email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+.input_box {
+  background-color: var(--color8);
+  border: 2px solid transparent;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  font-family: var(--text1);
+}
+
+.button_enter {
+  width: auto;
+  background-color: var(--color2);
+  font-size: 1.2rem;
+  color: var(--color5);
+  padding: 10px 2rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-family: var(--text1);
+}
+
+.switch_signin {
+  right: -1rem;
+  border-bottom-left-radius: 10rem;
+  border-start-start-radius: 10rem;
+  box-shadow: -2px 2px 5px 1px var(--color7);
+  transform: translateX(-200%);
+  z-index: 1;
+}
+.switch_signup {
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  /* border-bottom-left-radius: 10rem;
+  border-start-start-radius: 10rem; */
+  z-index: 2;
+  left: -1rem;
+  box-shadow: 2px -2px 5px 1px var(--color2);
+  /* right: 0; */
+  transform: translateX(0%);
+}
+.login {
+  display: none;
+}
+.forgotpassword {
+  color: var(--color7);
+}
+.singin-disable {
+  display: none;
+  transform: translateX(200%);
+}
+.login-active {
+  transform: translateX(0);
+  animation: move 0.2s linear;
+}
+.signup-disable {
+  animation: hide 0.2s linear;
+  display: none;
+  opacity: 1;
+  z-index: 5;
+}
+.signin_active {
+  animation: show 0.2s linear;
+  display: block;
+}
+.flip_bar {
+  display: none;
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    z-index: 1;
+    transform: translateX(-200%);
+  }
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50% {
+    opacity: 1;
+    z-index: 5;
+  }
+  100% {
+    opacity: 1;
+    z-index: 5;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+.alter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+asl-google-signin-button {
+  margin: 0.3rem 0;
+}
+.error {
+  border-color: red;
+}
+.error:focus {
+  border-color: red;
+}
+@media (max-width: 560px) {
+  .swip_bar {
+    display: none;
+  }
+  .content_login,
+  .content_signup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0.5rem;
+  }
+  .login {
+    transform: rotateY(180deg);
+  }
+  .content {
+    perspective: 1000px;
+  }
+  .xyz {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+  }
+
+  .flip {
+    transform: rotateY(180deg);
+  }
+  .flip_bar {
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 3px;
+    z-index: 6;
+    font-size: 1.2rem;
+    font-family: var(--text3);
+    margin: 0.5rem 0;
+  }
+  .flip_bar span {
+    cursor: pointer;
+    color: var(--color3);
+    text-transform: capitalize;
+  }
+  .flip_bar span:hover {
+    text-decoration: underline;
+  }
+  .switch_signup_text {
+    display: none;
+  }
+  .switch_signin_text {
+    display: block;
+  }
+  .signin_flip_disable {
+    display: none;
+  }
+  .signin_flip_active {
+    display: block;
+    transition: transform 3s;
+    transform: rotateY(180deg);
+  }
+}

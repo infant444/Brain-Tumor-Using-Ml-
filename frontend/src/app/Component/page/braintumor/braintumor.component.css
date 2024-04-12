@@ -1,0 +1,105 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+.container::-webkit-scrollbar{
+width: 0;
+}
+.content{
+  background-color: var(--color8);
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  width: 440px;
+  max-width: 100%;
+  min-height: 600px;
+  overflow: hidden;
+}
+.xy{
+  width: 440px;
+  max-width: 100%;
+  min-height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* margin-top: 83px; */
+}
+.report{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: .6rem;
+  overflow-y: scroll;
+
+}
+.report::-webkit-scrollbar{
+  width: 1px;
+}
+app-title{
+  margin: 1rem;
+}
+.input-conte{
+  margin:1rem .5rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-lable{
+  font-size: 1.2rem;
+  font-family: var(--text2);
+  letter-spacing: 1px;
+  color: var(--color1);
+}
+.input{
+  font-size: 1.1rem;
+  padding: .5rem;
+  border-radius: 1rem;
+}
+.Symptoms{
+  font-size: 1.1rem;
+}
+.Symptoms option{
+  margin: .2em;
+  border-bottom:2px solid var(--color8);
+  padding: .2rem;
+  padding-left: .5rem;
+
+}
+.Symptoms option:checked,
+.Symptoms option:focus
+{
+  background-color: var(--color2);
+  border-radius: 1rem;
+  color: var(--color5);
+}
+.upload-img{
+  width: 100px;
+}
+.submit{
+  text-align: center;
+}
+.submit-button{
+  width: auto;
+  background-color: var(--color2);
+  font-size: 1.2rem;
+  color: var(--color5);
+  padding: 10px 2rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-family: var(--text1);
+  border-radius: 2rem;
+}
+.error {
+  border-color: red;
+}
+.error:focus {
+  border-color: red;
+}

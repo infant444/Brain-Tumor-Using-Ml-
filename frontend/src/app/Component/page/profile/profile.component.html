@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="profile-card">
+      <div class="profile-header">
+          <img src="{{profile}}" alt="Profile Picture">
+          <h2>{{user.name}}</h2>
+          <p>Email:{{user.email}}</p>
+      </div>
+      <div class="profile-actions" *ngIf="show">
+          <a (click)="logout()">Logout</a>
+          <a href="#">Change Password</a>
+          <a routerLink="/admin/alluser" *ngIf="user.admin">Information</a>
+      </div>
+      <div class="report-list"  *ngIf="report">
+          <h3>Reports</h3>
+          <table>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Tumor Type</th>
+            </tr>
+            <tr *ngFor="let x of report">
+              <td> <a routerLink="/report/{{x.id}}">{{x.id}}</a></td>
+              <td>{{x.name}}</td>
+              <td>{{x.age}}</td>
+              <td>{{x.tumor_imfo.classify}}</td>
+            </tr>
+          </table>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for any inquiries or feedback.</p>
+    <div class="row">
+      <div class="col information">
+        <div class="contact-details">
+          <p (dblclick)="copy()"><mat-icon size="20">mail</mat-icon> {{supportmail}}</p>
+          <p><mat-icon  size="20">phone</mat-icon> <a href="tel:+919342199742">+91 9342199742</a></p>
+          <p><mat-icon  size="20">language</mat-icon> <a href="http://www.neuroscanweb.com">www.neuroscanweb.com</a></p>
+        </div>
+      </div>
+      <div class="col form">
+        <form [formGroup]="contect" (ngSubmit)="submit()">
+          <input type="text" placeholder="Name*" formControlName="name" [ngClass]="issubmited && contectInfo.name.invalid?'error':''">
+          <input type="email" placeholder="Email*" formControlName="email" [ngClass]="issubmited && contectInfo.email.invalid?'error':''">
+          <textarea placeholder="Message*" formControlName="message" [ngClass]="issubmited && contectInfo.message.invalid?'error':''"></textarea>
+          <button id="submit" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Copyright &copy; NeuroScan. 2024 All rights reserved
+  </footer>
+</div>

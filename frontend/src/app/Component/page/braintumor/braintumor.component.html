@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="content" *ngIf="!report">
+    <div class="report">
+      <app-title title="Patient Info" position="left"></app-title>
+    <form [formGroup]="braintest" class="report-form" (ngSubmit)="submit()">
+      <div class="input-conte">
+        <label class="main-lable" for="name">Name</label>
+        <input  class="input" type="text" id="name" formControlName="name" [ngClass]="(issumit && Fc.name.invalid)?'error':''">
+      </div>
+      <div class="input-conte">
+        <label class="main-lable" for="dob">Date of Birth</label>
+        <input  class="input" type="date" id="dob" formControlName="dob" [ngClass]="(issumit && Fc.dob.invalid)?'error':''" [max]="datemax">
+      </div>
+      <div class="input-conte">
+        <label class="main-lable" for="gender">Gender</label>
+        <select  id="gender" class="input" formControlName="gender" [ngClass]="(issumit && Fc.gender.invalid)?'error':''">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="transgender">Transgender</option>
+        </select>
+      </div>
+      <div class="input-conte">
+        <label class="main-lable">Symptoms</label>
+          <select formControlName="Symptoms" multiple class="input Symptoms">
+            <option *ngFor="let item of symproms" [value]="item">{{item}}</option>
+          </select>
+      </div>
+      <div class="input-conte">
+        <label class="main-lable" for="img">MRI Report Image</label>
+        <input  class="input" type="file" id="img" accept="image/*" formControlName="data" (change)="change($event)" [ngClass]="(issumit && Fc.data.invalid)?'error':''">
+
+      </div>
+      <div class="submit">
+        <input type="submit" value="process" class="submit-button">
+      </div>
+    </form>
+  </div>
+
+  </div>
+  <div *ngIf="report" class="xy">
+    <app-brain [report]="report"></app-brain>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

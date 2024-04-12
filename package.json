@@ -1,0 +1,16 @@
+{
+  "name": "Nero Scan",
+  "version": "1.0.0",
+  "description": "This website use to find the brain tumor ",
+  "main": "index.js",
+  "scripts": {
+    "start":"cd backend/built && node server.js",
+    "prebuild":"cd backend && npm run build",
+    "build":"cd frontend && npm run build"
+  },
+  "author": "Infant Raj S",
+  "license": "ISC",
+  "dependencies": {
+    "moongose": "^1.0.0"
+  }
+}

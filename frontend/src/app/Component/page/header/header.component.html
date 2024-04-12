@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="content">
+    <div class="title">
+      <a routerLink="/" class="tit">Neuro Scan</a>
+    </div>
+    <nav>
+       <ul class="all-links" [ngClass]="pop_up_nav?'pop-show':''">
+      <li><a routerLink="braintumor">Medical Support</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    </nav>
+    <div class="user">
+     <div class="menu-div" (click)="navchang()"> <mat-icon class="menu">menu</mat-icon></div>
+
+      <img [src]="profile_url" alt="profile_url" class="profile" (click)="profile()" *ngIf="user.token">
+      <button  class="login-btn" routerLink="/login" *ngIf="!user.token">Login</button>
+
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+  <!-- fixed header -->
+  <div class="container"[ngClass]="headerfixed?'container-fix':'container-notfixed'">
+    <div class="content">
+      <div class="title">
+        <a routerLink="/" class="tit">Neuro Scan</a>
+      </div>
+      <nav>
+         <ul class="all-links" [ngClass]="pop_up_nav?'pop-show':''">
+        <li><a routerLink="braintumor">Medical Support</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
+      </nav>
+      <div class="user">
+       <div class="menu-div" (click)="navchang()"> <mat-icon class="menu">menu</mat-icon></div>
+
+        <img [src]="profile_url" alt="profile_url" class="profile" (click)="profile()" *ngIf="user.token">
+        <button  class="login-btn" routerLink="/login" *ngIf="!user.token">Login</button>
+
+      </div>
+    </div>
+
+    </div>
+
