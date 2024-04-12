@@ -6,7 +6,9 @@
   "scripts": {
     "start":"cd backend/built && node server.js",
     "prebuild":"cd backend && npm run build",
-    "build":"cd frontend && npm run build"
+    "build":"cd frontend && npm run build",
+    "preinstall": "cd python && pip install -r requirment.txt",
+    "dev":"cd python && python server.py"
   },
   "author": "Infant Raj S",
   "license": "ISC",

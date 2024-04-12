@@ -1,0 +1,16 @@
+Flask
+Pillow
+torch
+tensorflow
+keras
+nltk
+numpy
+opencv-python
+pandas
+opencv-contrib-python
+scikit-image
+scikit-learn
+scipy
+tqdm
+Gunicorn
+Gunicorn
